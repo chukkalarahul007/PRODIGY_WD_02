@@ -1,0 +1,66 @@
+body {
+    background-color: #000;
+    font-family: 'Press Start 2P', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+  }
+
+.stopwatch {
+    background-color: #333;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 300px;
+}
+
+.time {
+    font-size: 40px;
+    margin: 20px 0;
+    color: #ff5733; /* Orange color for the time */
+}
+
+.control-button {
+    background-color: #4CAF50; /* Green button color */
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+.control-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.lap-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.lap-list li {
+    font-size: 16px;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.lap-list li:first-child {
+    border-top: 1px solid #ccc;
+}
+
+.lap-list li:last-child {
+    border-bottom: none;
+}
